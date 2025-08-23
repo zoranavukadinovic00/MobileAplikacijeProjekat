@@ -15,14 +15,14 @@ public class User {
 
     @ColumnInfo(name = "username")
     private String username;
-    @ColumnInfo(name = "password")          // <-- NOVO
-    private String password;                // <-- NOVO
+    @ColumnInfo(name = "password")
+    private String password;
 
 
     @ColumnInfo(name = "email")
-    private String email; // može biti null
+    private String email;
 
-    // Room ne podržava List<String> bez TypeConverter-a
+
     @ColumnInfo(name = "watched_movies")
     private List<String> watchedMovies;
 
@@ -41,7 +41,7 @@ public class User {
         this.password=password;
     }
 
-    // getters/setters
+
 
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }

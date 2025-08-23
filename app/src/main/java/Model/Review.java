@@ -61,7 +61,7 @@ public class Review {
         this.timestamp = timestamp;
     }
 
-    // Pomoćni konstruktor kad već imaš ID-jeve
+    
     @Ignore
     public Review(Long id, Long movieId, Long userId, String username, int rating, String comment, long timestamp) {
         this.id = id;
@@ -73,7 +73,7 @@ public class Review {
         this.timestamp = timestamp;
     }
 
-    // getters/setters
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public Long getMovieId() { return movieId; }

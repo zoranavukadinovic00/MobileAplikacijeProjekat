@@ -44,7 +44,7 @@ public class RegisterFragment extends Fragment {
         final String e = inputEmail.getText().toString().trim();
         final String p = inputPassword.getText().toString();
 
-        // Minimalna validacija
+
         if (TextUtils.isEmpty(u) || TextUtils.isEmpty(e) || TextUtils.isEmpty(p)) {
             Toast.makeText(getContext(), "Popuni sva polja", Toast.LENGTH_SHORT).show();
             return;
@@ -54,7 +54,7 @@ public class RegisterFragment extends Fragment {
             return;
         }
 
-        // UI state
+
         progress.setVisibility(View.VISIBLE);
         btnCreateAccount.setEnabled(false);
 
@@ -85,7 +85,7 @@ public class RegisterFragment extends Fragment {
 
             final String finalError = error;
 
-            if (!isAdded()) return; // fragment možda više nije prikazan
+            if (!isAdded()) return;
 
             requireActivity().runOnUiThread(() -> {
                 progress.setVisibility(View.GONE);

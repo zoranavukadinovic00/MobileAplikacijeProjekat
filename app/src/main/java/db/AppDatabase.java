@@ -18,7 +18,7 @@ import repo.dao.UserDao;
 
 @Database(
         entities = { Movie.class, Review.class, Suggestion.class, User.class },
-        version = 2,                 // ↑ podigni kad promeniš šemu (npr. dodao password)
+        version = 2,
         exportSchema = false
 )
 @TypeConverters({ Converters.class })
@@ -40,10 +40,9 @@ public abstract class AppDatabase extends RoomDatabase {
                                     AppDatabase.class,
                                     "projekat_rma.db"
                             )
-                            // U DEV fazi: spreči crash kad menjaš šemu
+
                             .fallbackToDestructiveMigration()
-                            // opciono: brži upis
-                            // .setJournalMode(RoomDatabase.JournalMode.WRITE_AHEAD_LOGGING)
+
                             .build();
                 }
             }

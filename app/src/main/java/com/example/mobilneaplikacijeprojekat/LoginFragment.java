@@ -53,7 +53,7 @@ public class LoginFragment extends Fragment {
         new Thread(() -> {
             User user = AppDatabase.getInstance(requireContext())
                     .userDao()
-                    .getByUsernameAndPassword(u, p);   // ⇐ vidi DAO ispod
+                    .getByUsernameAndPassword(u, p);
 
             requireActivity().runOnUiThread(() -> {
                 progress.setVisibility(View.GONE);

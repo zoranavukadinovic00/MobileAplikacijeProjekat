@@ -16,7 +16,7 @@ public class UserRepository {
         userDao = AppDatabase.getInstance(context).userDao();
     }
 
-    // --- GETTERS ---
+
     public interface UserCallback {
         void onResult(User user);
     }
@@ -35,7 +35,7 @@ public class UserRepository {
         });
     }
 
-    // --- CUD ---
+
     public void insert(User user) { io.execute(() -> userDao.insert(user)); }
 
     public void update(User user) { io.execute(() -> userDao.update(user)); }
