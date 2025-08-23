@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+-->
+
+    <color name="primary">#6C4AB6</color>
+    <color name="primary_dark">#5A3BA0</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <color name="bg">#F7F4FF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="stroke">#DDDDDD</color>
+    <color name="hint">#999999</color>
+    <color name="text">#222222</color>
+
+
+</resources>
