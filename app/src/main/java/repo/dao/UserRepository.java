@@ -23,7 +23,11 @@ public class UserRepository {
 
     public void getById(long id, UserCallback callback) {
         io.execute(() -> {
+<<<<<<< HEAD
             User user = userDao.getById(id);
+=======
+            User user = userDao.getByIdSingle(id);
+>>>>>>> d8badaf (Initial commit - MobileAplikacijeProjekat)
             if (callback != null) callback.onResult(user);
         });
     }

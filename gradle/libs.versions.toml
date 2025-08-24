@@ -1,5 +1,9 @@
 [versions]
+<<<<<<< HEAD
 agp = "8.11.1"
+=======
+agp = "8.4.2"
+>>>>>>> d8badaf (Initial commit - MobileAplikacijeProjekat)
 appcompatVersion = "1.7.0"
 fragment = "1.8.9"
 junit = "4.13.2"
@@ -33,4 +37,8 @@ navigation-fragment = { group = "androidx.navigation", name = "navigation-fragme
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+<<<<<<< HEAD
+=======
+android-library     = { id = "com.android.library",    version.ref = "agp" }
+>>>>>>> d8badaf (Initial commit - MobileAplikacijeProjekat)
 

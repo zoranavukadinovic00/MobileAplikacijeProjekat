@@ -10,6 +10,11 @@
     <string name="register_title">Welcome\nYou do not have an account?\nRegister</string>
     <string name="email_hint">Email</string>
     <string name="create_account_btn">Create account</string>
+<<<<<<< HEAD
+=======
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> d8badaf (Initial commit - MobileAplikacijeProjekat)
 
 
 </resources>
