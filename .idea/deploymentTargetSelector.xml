@@ -4,8 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-<<<<<<< HEAD
-        <DropdownSelection timestamp="2025-08-18T18:44:00.242961300Z">
+        <DropdownSelection timestamp="2025-08-25T00:46:39.437729800Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\HP\.android\avd\Pixel_XL.avd" />
@@ -13,8 +12,6 @@
           </Target>
         </DropdownSelection>
         <DialogSelection />
-=======
->>>>>>> d8badaf (Initial commit - MobileAplikacijeProjekat)
       </SelectionState>
     </selectionStates>
   </component>

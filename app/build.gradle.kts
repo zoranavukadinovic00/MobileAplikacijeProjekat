@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
@@ -33,19 +35,19 @@ android {
 
 dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.room.common.jvm)
-    implementation(libs.room.runtime.android)
-    implementation(libs.firebase.crashlytics.buildtools)
-    implementation(libs.navigation.fragment)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
+
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler)
+
+    testImplementation(libs.junit4)
+    androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(libs.appcompat.v170)
-    implementation (libs.fragment)
 
     // Room
     implementation(libs.room.runtime)
